@@ -306,3 +306,4 @@ data/photos/
 # R stuff
 .Rproj.user
 scripts.Rproj
+.Rhistory
