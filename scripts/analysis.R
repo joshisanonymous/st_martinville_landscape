@@ -14,6 +14,9 @@ signs <- read.csv(paste(dir, file, sep = ""), sep = "\t",
                   as.is = cols_as_char, encoding = "UTF-8")
 
 # Order factor levels
+signs$Area <- factor(signs$Area, levels = c(
+  "Regular", "Cultural District", "Historic District"
+))
 signs$Displayer <- factor(signs$Displayer, levels = c(
   "Government", "Non-local Business", "Non-Profit",
   "Religious Group", "Residence", "Local Business"
@@ -42,9 +45,7 @@ levels(signs_binomial$Language) <- list(
 
 # Binomial logistic regression, "Not French" as the reference level
 # Use and Essential are perfectly linear, so only one is used
-model <- glm(Language ~
-               Racial.Area + Cultural.District + Historic.District +
-               Displayer + Type + Essential,
+model <- glm(Language ~ Racial.Area + Area + Displayer + Type + Essential,
              data = signs_binomial,
              family = binomial)
 
