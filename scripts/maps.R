@@ -7,6 +7,10 @@ sign_colors <- c("#619CFF", "#00BA38", "#F8766D")
 town <- opq(getbb("St. Martinville"))
 streets <- osmdata_sf(add_osm_feature(town, key = c("highway")))
 water <- osmdata_sf(add_osm_feature(town, key = c("water")))
+historic_dist <- data.frame(
+  x = c(-93.81760416553334, -93.81760416553334, -89.6886555668733, -89.6886555668733),
+  y = c(29.24004503400145, 32.81866418073393, 32.81866418073393, 29.24004503400145)
+)
 
 # Subsets
 signs_english <- signs[signs$Language == "English", ]
@@ -35,6 +39,7 @@ map <- ggplot() +
           inherit.aes = FALSE,
           linewidth = 3,
           color = "orange") +
+  geom_polygon(data = historic_dist, aes(x = x, y = y, fill = "pink")) +
   geom_point(data = signs_english,
              mapping = aes(x = GPSLongitude,
                            y = GPSLatitude),
