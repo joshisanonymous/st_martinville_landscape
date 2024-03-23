@@ -75,7 +75,18 @@ mapsm <- ggplot() +
           inherit.aes = FALSE,
           linewidth = 3,
           color = "orange") +
-  # geom_polygon(data = historic_dist, aes(x = x, y = y, fill = "pink")) +
+  theme_void()
+
+mapsm_norm <- mapsm +
+  geom_textbox(aes(label = "Saint Martinville, LA"),
+               y = 30.138, x = -91.838, size = 6,
+               width = unit(2.25, "inch"),
+               fill = "lightgreen") +
+  coord_sf(ylim = c(30.10, 30.15),
+           xlim = c(-91.85, -91.80),
+           expand = FALSE)
+
+mapsm_norm_signs <- mapsm +
   geom_point(data = signs_english,
              mapping = aes(x = GPSLongitude,
                            y = GPSLatitude),
@@ -99,22 +110,38 @@ mapsm <- ggplot() +
              color = "black",
              shape = 21,
              inherit.aes = FALSE,
-             size = sign_size) +
-  theme_void()
-
-mapsm_norm <- mapsm +
-  geom_textbox(aes(label = "Saint Martinville, LA"),
-               y = 30.138, x = -91.838, size = 6,
-               width = unit(2.25, "inch"),
-               fill = "lightgreen") +
-  coord_sf(ylim = c(30.10, 30.15),
-           xlim = c(-91.85, -91.80),
-           expand = FALSE)
+             size = sign_size)
 
 mapsm_dists <- mapsm +
   coord_sf(ylim = c(30.117, 30.129),
            xlim = c(-91.836, -91.821),
            expand = FALSE)
+
+mapsm_dists_signs <- mapsm_dists +
+  geom_point(data = signs_english,
+             mapping = aes(x = GPSLongitude,
+                           y = GPSLatitude),
+             fill = sign_colors[1],
+             color = "black",
+             shape = 21,
+             inherit.aes = FALSE,
+             size = sign_size) +
+  geom_point(data = signs_bilingual,
+             mapping = aes(x = GPSLongitude,
+                           y = GPSLatitude),
+             fill = sign_colors[2],
+             color = "black",
+             shape = 21,
+             inherit.aes = FALSE,
+             size = sign_size) +
+  geom_point(data = signs_french,
+             mapping = aes(x = GPSLongitude,
+                           y = GPSLatitude),
+             fill = sign_colors[3],
+             color = "black",
+             shape = 21,
+             inherit.aes = FALSE,
+             size = sign_size)
 
 mapla <- ggplot() +
   geom_sf(data = state) +
