@@ -2,16 +2,15 @@
   \begin{columns}
     \column{0.5\textwidth}
       \begin{center}
-        <<fig.height = 3, fig.width = 3>>=
-        map
-        @
+        \includegraphics[scale=0.05]{../data/photos/PXL_20230610_164829263.jpg}
       \end{center}
     \column{0.5\textwidth}
       Obtain a better understanding of how French is used in the linguistic landscape of St Martinville in lieu of or in addition to English \\
       \vspace{0.25cm}
       Implication:
       \begin{itemize}
-        \item[$\to$] Informs decision-making in language maintenance efforts
+        \item Informs decision-making in language maintenance efforts
+        \item Applies a test for the latter stages of enregisterment \parencite{agha_social_2003, johnstone_mobility_2006} when applied to a language
       \end{itemize}
   \end{columns}
 \end{frame}
