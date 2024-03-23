@@ -307,3 +307,6 @@ data/photos/
 .Rproj.user
 scripts.Rproj
 .Rhistory
+
+# Generated pdfs
+*.pdf
