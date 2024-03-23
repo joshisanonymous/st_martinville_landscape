@@ -1,6 +1,3 @@
-# Packages--------------------------------------------------------------------
-library(ggtext)
-
 # Variables -------------------------------------------------------------------
 essential <- c("bold.italic", "bold.italic", "bold.italic", "bold.italic",
                "plain", "plain", "plain", "bold.italic", "plain")

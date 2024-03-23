@@ -1,6 +1,7 @@
 ## ---- Run ------------------------------------------------------------------
 # Packages -------------------------------------------------------------------
 library(ggplot2)
+library(ggtext)
 library(car)
 library(tidyr)
 library(dplyr)
