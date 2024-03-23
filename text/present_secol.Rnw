@@ -66,4 +66,6 @@
   \section{Background}
     <<child = "./present_frames/la_french.Rnw">>=
     @
+    <<child = "./present_frames/st_martin.Rnw">>=
+    @
 \end{document}

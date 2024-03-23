@@ -1,5 +1,35 @@
 \begin{frame}{French in Louisiana\Logo}
-  \begin{itemize}
-    \item 
-  \end{itemize}
+  \begin{columns}
+    \small
+    \column{0.5\textwidth}
+      \begin{center}
+        <<fig.height = 3, fig.width = 3>>=
+        mapacadiana
+        @
+        As per HCR 496 \parencite[1971, as cited in][]{trepanier_french_1988}
+      \end{center}
+    \column{0.5\textwidth}
+      \begin{minipage}[c][0.6\textheight]{\linewidth}
+        \only<1>{
+          \begin{itemize}
+            \item Spoken primarily in South Louisiana, i.e. Acadiana \parencite{trepanier_french_1988}
+            \item French has long been described as in decline \parencite{johnson_louisiana_1976, rottet_language_1995, trepanier_french_1988}
+            \item Creole has also long been described as in decline \parencite{klingler_probleme_2005, neumann_creole_1985}
+          \end{itemize}
+        }
+        % \only<2>{
+        %   \begin{itemize}
+        %     \item Speakers remaining $\approx 84,000$ \parencite[p.~128]{marcoux_estimation_2022}
+        %     \item Literacy is low (\author[p.~71]{blainey_first_2013}, \year{blainey_first_2013}; \author[p.~146]{rottet_language_1995}, \year{rottet_language_1995})
+        %   \end{itemize}
+        % }
+        \only<3>{
+          Language maintenance efforts in relation to signage:
+          \begin{itemize}
+            \item CODOFIL established in 1968 \parencite{noauthor_about_2023}
+            \item blah
+          \end{itemize}
+        }
+      \end{minipage}
+  \end{columns}
 \end{frame}

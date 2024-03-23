@@ -9,13 +9,29 @@ sign_colors <- c("#619CFF", "#00BA38", "#F8766D")
 # Louisiana
 louisiana <- opq(getbb("Louisiana")) |>
   add_osm_feature(key = "boundary", value = "administrative") |>
-  add_osm_feature(key = "admin_level", value = c("4", "6")) |>
+  add_osm_feature(key = "admin_level", value = c("4", "6", "8")) |>
   osmdata_sf()
 state <- subset(louisiana$osm_multipolygons,
                 admin_level == "4" & name == "Louisiana")
 parishes <- louisiana$osm_multipolygons |>
   st_filter(state, .predicate=st_within) |>
   subset(admin_level == 6)
+acadiana <- subset(parishes,
+  name == "Calcasieu Parish" | name == "Cameron Parish" | name == "Jefferson Davis Parish" |
+  name == "Vermilion Parish" | name == "Acadia Parish" | name == "Evangeline Parish" |
+  name == "Avoyelles Parish" | name == "St. Landry Parish" | name == "Lafayette Parish" |
+  name == "Saint Martin Parish" | name == "Iberia Parish" | name == "St. Mary Parish" |
+  name == "Assumption Parish" | name == "Iberville Parish" | name == "Pointe Coupee Parish" |
+  name == "West Baton Rouge Parish" | name == "Ascension Parish" | name == "St. James Parish" |
+  name == "St. John the Baptist Parish" | name == "St. Charles Parish" |
+  name == "Lafourche Parish" | name == "Terrebonne Parish")
+major_cities <- subset(louisiana$osm_multipolygons, admin_level == "8" &
+                       name == "Lafayette" | name == "New Orleans" |
+                       name == "Baton Rouge" | name == "St. Martinville")
+major_cities_coords <- data.frame(
+  "x" = c(-89.62518, -91.81187 + 0.2, -91.97133, -90.99934),
+  "y" = c(30.19947, 30.14827, 30.29646, 30.55898)
+)
 
 # St Martinville
 stmartinville <- opq(getbb("St. Martinville"))
@@ -103,4 +119,15 @@ mapsm_dists <- mapsm +
 mapla <- ggplot() +
   geom_sf(data = state) +
   geom_sf(data = parishes) +
+  theme_void()
+
+mapacadiana <- mapla +
+  geom_sf(data = acadiana,
+          fill = "#F8766D") +
+  geom_sf(data = major_cities,
+          fill = "#00BA38") +
+  geom_text(data = major_cities,
+    aes(label = name),
+    y = major_cities_coords$y + 0.05, x = major_cities_coords$x + 0.175,
+    size = 2, fontface = "bold") +
   theme_void()
