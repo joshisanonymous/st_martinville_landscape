@@ -1,0 +1,69 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Joshua McNeill                                               %
+% joshua dot mcneill at uga dot edu                            %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\documentclass{beamer}
+  % Beamer settings
+  \usetheme{CambridgeUS}
+  \usecolortheme{seagull}
+  \usefonttheme{professionalfonts}
+  \usefonttheme{serif}
+  \setbeamertemplate{bibliography item}{}
+
+  % Packages and settings
+  \usepackage{fontspec}
+    \setmainfont{Charis SIL}
+  \usepackage[backend=biber, style=apa]{biblatex}
+    \addbibresource{references.bib}
+  \usepackage{hyperref}
+    \hypersetup{colorlinks=true,
+                allcolors=blue}
+  \usepackage{graphicx}
+    \graphicspath{{../data/photos/}{./present_figures/}}
+
+  % Document information
+  \author{Joshua McNeill}
+  \title[The linguistic landscape of St Martinville]{Bilingualism in the linguistic landscape of St Martinville, Louisiana}
+  \institute[UGA]{
+    \url{joshua.mcneill@uga.edu} \\
+    \vspace{0.5cm}
+    University of Georgia}
+  \date{4 April, 2024}
+  \titlegraphic{\includegraphics[scale=0.05]{uga_logo.png}}
+  \newcommand{\Logo}{{\hskip0pt plus 1filll \includegraphics[scale=0.028]{uga_logo.png}}}
+
+  %% Custom commands
+  % Lexical items
+  \newcommand{\lexi}[1]{\textit{#1}}
+  % Gloss
+  \newcommand{\gloss}[1]{`#1'}
+  \newcommand{\tinygloss}[1]{{\tiny`#1'}}
+  % Orthographic representations
+  \newcommand{\orth}[1]{$\langle$#1$\rangle$}
+  % Utterances (pragmatics)
+  \newcommand{\uttr}[1]{`#1'}
+  % Sentences (pragmatics)
+  \newcommand{\sent}[1]{\textit{#1}}
+  
+\begin{document}
+  <<setup, echo = FALSE, message = FALSE>>=
+  opts_chunk$set(echo = FALSE,
+                 warning = FALSE,
+                 message = FALSE,
+                 results = "asis")
+  setwd("../scripts/")
+  source("analysis.R", local = knitr::knit_global())
+  @
+  \begin{frame}
+    \titlepage
+  \end{frame}
+
+  \section{Objective}
+    <<child = "./present_frames/objectives.Rnw">>=
+    @
+
+  \section{Background}
+    <<child = "./present_frames/la_french.Rnw">>=
+    @
+\end{document}

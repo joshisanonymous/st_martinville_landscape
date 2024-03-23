@@ -1,0 +1,17 @@
+\begin{frame}{Objective\Logo}
+  \begin{columns}
+    \column{0.5\textwidth}
+      \begin{center}
+        <<fig.height = 3, fig.width = 3>>=
+        map
+        @
+      \end{center}
+    \column{0.5\textwidth}
+      Obtain a better understanding of how French is used in the linguistic landscape of St Martinville in lieu of or in addition to English \\
+      \vspace{0.25cm}
+      Implication:
+      \begin{itemize}
+        \item[$\to$] Informs decision-making in language maintenance efforts
+      \end{itemize}
+  \end{columns}
+\end{frame}
