@@ -60,6 +60,7 @@
   @
   \begin{frame}
     \titlepage
+    {\scriptsize Code and data available at \url{https://osf.io/j9ds4/}.}
   \end{frame}
 
   \section{Objective}
