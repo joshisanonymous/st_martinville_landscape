@@ -32,6 +32,15 @@ graph_use <- signs_import_langs %>%
   ylab(ylabel) +
   xlab("Use (essential in italics)")
 
+graph_use_rf <- signs_import_langs %>%
+  count(Language, Use, .drop = FALSE) %>%
+  mutate(rf = n/sum(n), .by = Use) %>%
+  ggplot(aes(x = Use, y = rf)) +
+  geom_col(aes(fill = Language),
+           position = position_dodge(preserve = "single")) +
+  theme(axis.text.x = element_markdown(face = essential)) +
+  ylab("Relative Frequency (by Use)")
+
 graph_displayer <- signs_import_langs %>%
   mutate(Language, Displayer) %>%
   count(Language, Displayer, .drop = FALSE) %>%
@@ -44,6 +53,14 @@ graph_displayer <- signs_import_langs %>%
                   group = Language),
               position = position_dodge(width = 1)) +
   ylab(ylabel)
+
+graph_displayer_rf <- signs_import_langs %>%
+  count(Language, Displayer, .drop = FALSE) %>%
+  mutate(rf = n/sum(n), .by = Displayer) %>%
+  ggplot(aes(x = Displayer, y = rf)) +
+  geom_col(aes(fill = Language),
+           position = position_dodge(preserve = "single")) +
+  ylab("Relative Frequency (by Displayer)")
 
 graph_type <- signs_import_langs %>%
   mutate(Language, Type) %>%
@@ -58,6 +75,14 @@ graph_type <- signs_import_langs %>%
             position = position_dodge(width = 1)) +
   ylab(ylabel)
 
+graph_type_rf <- signs_import_langs %>%
+  count(Language, Type, .drop = FALSE) %>%
+  mutate(rf = n/sum(n), .by = Type) %>%
+  ggplot(aes(x = Type, y = rf)) +
+  geom_col(aes(fill = Language),
+           position = position_dodge(preserve = "single")) +
+  ylab("Relative Frequency (by Type)")
+
 graph_race <- signs_import_langs %>%
   mutate(Language, Racial.Area) %>%
   count(Language, Racial.Area, .drop = FALSE) %>%
@@ -71,6 +96,14 @@ graph_race <- signs_import_langs %>%
             position = position_dodge(width = 1)) +
   ylab(ylabel)
 
+graph_race_rf <- signs_import_langs %>%
+  count(Language, Racial.Area, .drop = FALSE) %>%
+  mutate(rf = n/sum(n), .by = Racial.Area) %>%
+  ggplot(aes(x = Racial.Area, y = rf)) +
+  geom_col(aes(fill = Language),
+           position = position_dodge(preserve = "single")) +
+  ylab("Relative Frequency (by Racial.Area)")
+
 graph_area <- signs_import_langs %>%
   mutate(Language, Area) %>%
   count(Language, Area, .drop = FALSE) %>%
@@ -83,3 +116,11 @@ graph_area <- signs_import_langs %>%
                 group = Language),
             position = position_dodge(width = 1)) +
   ylab(ylabel)
+
+graph_area_rf <- signs_import_langs %>%
+  count(Language, Area, .drop = FALSE) %>%
+  mutate(rf = n/sum(n), .by = Area) %>%
+  ggplot(aes(x = Area, y = rf)) +
+  geom_col(aes(fill = Language),
+           position = position_dodge(preserve = "single")) +
+  ylab("Relative Frequency (by Area)")

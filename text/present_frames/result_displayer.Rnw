@@ -1,0 +1,27 @@
+\begin{frame}{Displayer\Logo}
+  \begin{center}
+    \only<1>{
+      <<fig.asp = 1>>=
+      graph_displayer_rf
+      @
+    }
+    \only<2>{
+      \includegraphics[scale=0.05]{../data/photos/PXL_20230610_170838836.jpg}
+      \includegraphics[scale=0.05]{../data/photos/PXL_20230610_170844107.jpg}
+    }
+    \only<3>{
+      \includegraphics[scale=0.05]{../data/photos/PXL_20230610_171021622.jpg}
+    }
+    \only<4>{
+      \includegraphics[scale=0.05]{../data/photos/PXL_20230610_174259408.jpg}
+      \includegraphics[scale=0.05]{../data/photos/PXL_20230610_170752356.jpg}
+    }
+    \only<5>{
+      \includegraphics[scale=0.05]{../data/photos/PXL_20230306_194644861.jpg}
+    }
+    \only<6>{
+      \includegraphics[scale=0.05]{../data/photos/PXL_20230610_170145693.jpg}
+      \includegraphics[scale=0.05]{../data/photos/PXL_20230610_170426086.jpg}
+    }
+  \end{center}
+\end{frame}

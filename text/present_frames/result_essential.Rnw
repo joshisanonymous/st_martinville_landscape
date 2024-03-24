@@ -1,0 +1,12 @@
+\begin{frame}{Essential\Logo}
+  \begin{center}
+    \only<1>{
+      <<fig.asp = 1>>=
+      graph_essential_rf
+      @
+    }
+    % \only<2>{
+      % \includegraphics[scale=0.05]{../data/photos/PXL_20230610_170838836.jpg}
+    % }
+  \end{center}
+\end{frame}

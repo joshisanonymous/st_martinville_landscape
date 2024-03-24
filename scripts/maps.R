@@ -45,6 +45,8 @@ streets_reg <- osmdata_sf(add_osm_feature(
 streets_main <- osmdata_sf(add_osm_feature(
   stmartinville, key = "highway", value = c("primary","trunk")))
 water <- osmdata_sf(add_osm_feature(stmartinville, key = "water"))
+waterbodies <- osmdata_sf(add_osm_feature(stmartinville, key = "natural", value = "water"))
+waterway <- osmdata_sf(add_osm_feature(stmartinville, key = "waterway"))
 historic_dist_all <- signs[signs$Area == "Historic District", ]
 historic_dist <- historic_dist_all[
   historic_dist_all$GPSLongitude == max(historic_dist_all$GPSLongitude) |
@@ -69,8 +71,11 @@ mapsm <- ggplot() +
           fill = "lightyellow2",
           color = "yellow") +
   geom_sf(data = water$osm_multipolygons,
-          inherit.aes = FALSE,
           fill = "steelblue") +
+  geom_sf(data = waterbodies$osm_polygons,
+          fill = "steelblue") +
+  geom_sf(data = waterway$osm_lines,
+          color = "steelblue") +
   geom_sf(data = streets_foot$osm_lines,
           inherit.aes = FALSE,
           linewidth = 1,

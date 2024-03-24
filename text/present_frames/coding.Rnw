@@ -1,18 +1,25 @@
 \begin{frame}{Coding and Model\Logo}
   \footnotesize
   \begin{center}
-    \begin{tabular}{l l l l l l}
-      Language \hfill \~{}& Racial Area \hfill + & Area \hfill +      & Displayer \hfill +  & Type \hfill +  & Essential \\
+    \begin{tabular}{l l l}
+      Language \hfill \~{} & Racial Area \hfill +  & Area \hfill +     \\
       \hline
-      \textbf{Not French} & \textbf{Black}        & \textbf{Regular}  & \textbf{Government} & \textbf{Metal} & \textbf{Yes} \\
-      French              & White                 & Cultural District & Non-local Business  & Imprint        & No \\
-                          &                       & Historic District & Non-Profit          & Plaque         & \\
-                          &                       &                   & Religious Group     & Board          & \\
-                          &                       &                   & Residence           & Tag            & \\
-                          &                       &                   & Local Business      & Poster         & \\
-                          &                       &                   &                     & Document       & \\
-                          &                       &                   &                     & Graffiti       & \\
-                          &                       &                   &                     & Item           & \\
+      \textbf{Not French}  & \textbf{Black}        & \textbf{Regular}  \\
+      French               & White                 & Cultural District \\
+                           &                       & Historic District \\
+                           &                       &                   \\
+      Essential \hfill +   & Displayer \hfill +    & Type              \\
+      \hline
+      \textbf{Yes}         & \textbf{Residence}    & \textbf{Metal}    \\
+      No                   & Government            & Imprint           \\
+                           & Non-Profit            & Plaque            \\
+                           & Religious Group       & Board             \\
+                           & Local Business        & Tag               \\
+                           & Non-local Business    & Poster            \\
+                           &                       & Document          \\
+                           &                       & Graffiti          \\
+                           &                       & Item              \\
     \end{tabular}
   \end{center}
+  Also coded for \emph{Use} which is perfectly correlated with \emph{Essential}
 \end{frame}

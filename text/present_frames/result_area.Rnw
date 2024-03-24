@@ -1,0 +1,23 @@
+\begin{frame}{Area\Logo}
+  \begin{columns}
+    \column{0.5\textwidth}
+      \begin{center}
+        \only<1>{
+          <<fig.asp = 1.25>>=
+          mapsm_dists_signs
+          @
+        }
+        \only<2>{
+          <<fig.asp = 1.25>>=
+          mapsm_norm_signs
+          @
+        }
+      \end{center}
+    \column{0.5\textwidth}
+      \begin{center}
+        <<fig.asp = 0.75>>=
+        graph_area_rf
+        @
+      \end{center}
+  \end{columns}
+\end{frame}

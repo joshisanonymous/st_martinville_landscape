@@ -1,0 +1,24 @@
+\begin{frame}{Model\Logo}
+  \footnotesize
+  \begin{center}
+    \begin{tabular}{r l r l r l}
+                                                          & Language \hfill \~{} & \emph{coef}                                                         & Racial Area \hfill +  & \emph{coef}                                                   & Area \hfill +         \\
+      \hline
+                                                          & \textbf{Not French}  &                                                                     & \textbf{Black}        &                                                               & \textbf{Regular}      \\
+                                                          & French               & \Sexpr{round(model$coefficients["Racial.AreaWhite"], 2)}            & White                 & \Sexpr{round(model$coefficients["AreaCultural District"], 2)} & Cultural District *** \\
+                                                          &                      &                                                                     &                       & \Sexpr{round(model$coefficients["AreaHistoric District"], 2)} & Historic District **  \\
+                                                          &                      &                                                                     &                       &                                                               &                       \\
+      \emph{coef}                                         & Essential \hfill +   &                                                                     & Displayer \hfill +    &                                                               & Type                  \\
+      \hline
+                                                          & \textbf{Yes}         &                                                                     & \textbf{Residence}    &                                                               & \textbf{Metal}        \\
+      \Sexpr{round(model$coefficients["EssentialNo"], 2)} & No *                 & \Sexpr{round(model$coefficients["DisplayerGovernment"], 2)}         & Government *          & \Sexpr{round(model$coefficients["TypeImprint"], 2)}           & Imprint               \\
+                                                          &                      & \Sexpr{round(model$coefficients["DisplayerNon-Profit"], 2)}         & Non-Profit **         & \Sexpr{round(model$coefficients["TypePlaque"], 2)}            & Plaque                \\
+                                                          &                      & \Sexpr{round(model$coefficients["DisplayerReligious Group"], 2)}    & Religious Group **    & \Sexpr{round(model$coefficients["TypeBoard"], 2)}             & Board                 \\
+                                                          &                      & \Sexpr{round(model$coefficients["DisplayerLocal Business"], 2)}     & Local Business        & \Sexpr{round(model$coefficients["TypeTag"], 2)}               & Tag                   \\
+                                                          &                      & \Sexpr{round(model$coefficients["DisplayerNon-local Business"], 2)} & Non-local Business    & \Sexpr{round(model$coefficients["TypePoster"], 2)}            & Poster                \\
+                                                          &                      &                                                                     &                       & \Sexpr{round(model$coefficients["TypeDocument"], 2)}          & Document *            \\
+                                                          &                      &                                                                     &                       & \Sexpr{round(model$coefficients["TypeGraffiti"], 2)}          & Graffiti              \\
+                                                          &                      &                                                                     &                       & \Sexpr{round(model$coefficients["TypeItem"], 2)}              & Item                  \\
+    \end{tabular}
+  \end{center}
+\end{frame}

@@ -20,8 +20,8 @@ signs$Area <- factor(signs$Area, levels = c(
   "Regular", "Cultural District", "Historic District"
 ))
 signs$Displayer <- factor(signs$Displayer, levels = c(
-  "Government", "Non-local Business", "Non-Profit",
-  "Religious Group", "Residence", "Local Business"
+  "Residence", "Government", "Non-Profit",
+  "Religious Group", "Local Business", "Non-local Business"
 ))
 signs$Use <- factor(signs$Use, levels = c(
   "Warning", "Instruction", "Schedule", "Menu", "Transgression",
