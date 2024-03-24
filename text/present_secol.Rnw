@@ -45,6 +45,9 @@
   \newcommand{\uttr}[1]{`#1'}
   % Sentences (pragmatics)
   \newcommand{\sent}[1]{\textit{#1}}
+  % Research questions
+  \newcommand{\RQone}{What factors lead to a more or less use of French in the linguistic landscape?}
+  \newcommand{\RQtwo}{Is French used as performance or as a practical matter?}
   
 \begin{document}
   <<setup, echo = FALSE, message = FALSE>>=
@@ -91,5 +94,20 @@
     <<child = "./present_frames/result_model.Rnw">>=
     @
     <<child = "./present_frames/result_essential.Rnw">>=
+    @
+  
+  \section{Conclusions}
+    <<child = "./present_frames/answer_factors.Rnw">>=
+    @
+    <<child = "./present_frames/answer_enregisterment.Rnw">>=
+    @
+  
+  \section{References}
+    \printbibliography
+  
+  \section{Bonus Slides}
+    <<child = "./present_frames/bonus_race.Rnw">>=
+    @
+    <<child = "./present_frames/bonus_type.Rnw">>=
     @
 \end{document}

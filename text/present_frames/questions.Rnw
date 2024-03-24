@@ -1,7 +1,7 @@
 \begin{frame}{Research Questions\Logo}
   Given the social situation:
   \begin{enumerate}
-    \item What factors lead to a more or less use of French in the linguistic landscape?
-    \item Is French used as performance or as a practical matter?
+    \item \RQone
+    \item \RQtwo
   \end{enumerate}
 \end{frame}

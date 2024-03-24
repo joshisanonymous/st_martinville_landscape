@@ -7,7 +7,7 @@ sign_size <- 3
 sign_colors <- c("#619CFF", "#00BA38", "#F8766D")
 
 # Louisiana
-louisiana <- opq(getbb("Louisiana")) |>
+louisiana <- opq(getbb("Louisiana"), timeout = 60 * 20) |>
   add_osm_feature(key = "boundary", value = "administrative") |>
   add_osm_feature(key = "admin_level", value = c("4", "6", "8")) |>
   osmdata_sf()

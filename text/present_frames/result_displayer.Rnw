@@ -1,7 +1,7 @@
 \begin{frame}{Displayer\Logo}
   \begin{center}
     \only<1>{
-      <<fig.asp = 1>>=
+      <<fig.asp = 0.6>>=
       graph_displayer_rf
       @
     }

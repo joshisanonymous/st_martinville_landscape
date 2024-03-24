@@ -1,0 +1,15 @@
+\begin{frame}{Factors\Logo}
+  \small
+  Question 1: \RQone
+  \begin{itemize}
+    \item Displayer matters: Increased use of French on government, non-profit, and religious group properties
+    \begin{itemize}
+      \item[$\to$] French signage is driven by local community organisations rather than private individuals
+    \end{itemize}
+    \item Location matters: Increased use of French in cultural and historic districts
+    \item Essentialness matters: The only essential sign use that includes French is placing signs
+    \begin{itemize}
+      \item[$\to$] By and large through street signs
+    \end{itemize}
+  \end{itemize}
+\end{frame}

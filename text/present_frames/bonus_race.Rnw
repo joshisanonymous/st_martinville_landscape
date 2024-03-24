@@ -1,0 +1,14 @@
+\begin{frame}{Racial Area\Logo}
+  \begin{columns}
+    \column{0.5\textwidth}
+      \begin{center}
+        \includegraphics[scale=1.5]{./present_figures/race.png}
+      \end{center}
+    \column{0.5\textwidth}
+      \begin{center}
+        <<fig.asp = 1.15>>=
+        graph_race_rf
+        @
+      \end{center}
+  \end{columns}
+\end{frame}

@@ -1,0 +1,5 @@
+\begin{frame}{Type\Logo}
+  <<fig.asp = 0.6>>=
+  graph_type_rf
+  @
+\end{frame}

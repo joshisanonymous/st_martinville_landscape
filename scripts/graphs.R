@@ -24,6 +24,7 @@ graph_use <- signs_import_langs %>%
   geom_col(aes(fill = Language),
            position = position_dodge(preserve = "single")) +
   coord_cartesian(ylim = c(0, graph_use_ylim)) +
+  theme(axis.text.x = element_text(angle = 35, vjust = 1, hjust = 1)) +
   theme(axis.text.x = element_markdown(face = essential)) +
   geom_text(aes(label = ifelse(Language == "English" & n > graph_use_ylim, n, NA),
                 y = graph_use_ylim,
@@ -38,6 +39,7 @@ graph_use_rf <- signs_import_langs %>%
   ggplot(aes(x = Use, y = rf)) +
   geom_col(aes(fill = Language),
            position = position_dodge(preserve = "single")) +
+  theme(axis.text.x = element_text(angle = 35, vjust = 1, hjust = 1)) +
   theme(axis.text.x = element_markdown(face = essential)) +
   ylab("Relative Frequency (by Use)")
 
@@ -49,9 +51,9 @@ graph_displayer <- signs_import_langs %>%
              position = position_dodge(preserve = "single")) +
     coord_cartesian(ylim = c(0, graph_disp_ylim)) +
     geom_text(aes(label = ifelse(Language == "English" & n > graph_disp_ylim, n, NA),
-                  y = graph_disp_ylim,
-                  group = Language),
+                  y = graph_disp_ylim, group = Language),
               position = position_dodge(width = 1)) +
+  theme(axis.text.x = element_text(angle = 45, vjust = 1, hjust = 1)) +
   ylab(ylabel)
 
 graph_displayer_rf <- signs_import_langs %>%
@@ -60,6 +62,7 @@ graph_displayer_rf <- signs_import_langs %>%
   ggplot(aes(x = Displayer, y = rf)) +
   geom_col(aes(fill = Language),
            position = position_dodge(preserve = "single")) +
+  theme(axis.text.x = element_text(angle = 45, vjust = 1, hjust = 1)) +
   ylab("Relative Frequency (by Displayer)")
 
 graph_type <- signs_import_langs %>%

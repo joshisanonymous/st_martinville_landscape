@@ -1,12 +1,17 @@
 \begin{frame}{Essential\Logo}
   \begin{center}
     \only<1>{
-      <<fig.asp = 1>>=
-      graph_essential_rf
+      <<fig.asp = 0.6>>=
+      graph_use_rf
       @
     }
-    % \only<2>{
-      % \includegraphics[scale=0.05]{../data/photos/PXL_20230610_170838836.jpg}
-    % }
+    \only<2>{
+      \includegraphics[scale=0.05]{../data/photos/PXL_20230612_161213389.jpg}
+      \includegraphics[scale=0.05]{../data/photos/PXL_20230612_160929377.MP.jpg}
+    }
+    \only<3>{
+      \includegraphics[scale=0.05]{../data/photos/PXL_20230610_171231272.jpg}
+      \includegraphics[scale=0.05]{../data/photos/PXL_20230611_223718160.jpg}
+    }
   \end{center}
 \end{frame}
