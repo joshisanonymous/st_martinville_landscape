@@ -32,7 +32,7 @@
           \begin{itemize}
             \item 81\% English, 19\% French/Creole \parencite{noauthor_st_2000}
             \item Population $\approx$ 5,379
-            \item 34\% White, 60\% Black of African-American
+            \item 34\% White, 60\% Black or African-American
             \item[] \parencite{noauthor_us_2020}
             \item<4> Includes a historic district and cultural district
             \begin{itemize}

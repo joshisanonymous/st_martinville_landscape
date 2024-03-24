@@ -10,7 +10,7 @@
       Implications:
       \begin{itemize}
         \item Inform decision-making in language maintenance efforts
-        \item Apply a test for the latter stages of enregisterment \parencite{agha_social_2003, johnstone_mobility_2006} when applied to a language
+        \item Apply a test for the later stages of enregisterment \parencite{agha_social_2003, johnstone_mobility_2006} when applied to a language
       \end{itemize}
   \end{columns}
 \end{frame}
