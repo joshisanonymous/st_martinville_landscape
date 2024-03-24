@@ -68,4 +68,14 @@
     @
     <<child = "./present_frames/st_martin.Rnw">>=
     @
+
+  \section{Research Questions}
+    <<child = "./present_frames/questions.Rnw">>=
+    @
+
+  \section{Methods}
+    <<child = "./present_frames/data.Rnw">>=
+    @
+    <<child = "./present_frames/coding.Rnw">>=
+    @
 \end{document}

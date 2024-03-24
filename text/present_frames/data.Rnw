@@ -1,0 +1,16 @@
+\begin{frame}{Data Collection\Logo}
+  \begin{columns}
+    \column{0.5\textwidth}
+      \begin{center}
+        <<fig.asp = 1.25>>=
+        mapsm_norm_signs
+        @
+      \end{center}
+    \column{0.5\textwidth}
+      \begin{itemize}
+        \item Collected: June 10th to June 20th, 2023
+        \item Total signs: \Sexpr{nrow(signs)}
+        \item ``Signs'' in this case means all public-facing language
+      \end{itemize}
+  \end{columns}
+\end{frame}
