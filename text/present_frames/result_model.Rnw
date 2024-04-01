@@ -1,6 +1,8 @@
 \begin{frame}{Model\Logo}
   \footnotesize
   \begin{center}
+    Binomial logistic regression model
+
     \begin{tabular}{l l l}
       (Intercept)                                                          &                                                                                               & \\
       \hline
@@ -10,15 +12,15 @@
       French \hfill \Sexpr{round(model$coefficients["LanguageFrench"], 2)} & White \hfill \Sexpr{round(model$coefficients["Racial.AreaWhite"], 2)}                         & Cultural District \hfill *** \Sexpr{round(model$coefficients["AreaCultural District"], 2)} \\
                                                                            &                                                                                               & Historic District \hfill ** \Sexpr{round(model$coefficients["AreaHistoric District"], 2)} \\
                                                                            &                                                                                               & \\
+      \cline{2-3}
                                                                            & Displayer \hfill +                                                                            & Essential \\
-      \hline
+      \cline{2-3}
                                                                            & \textbf{Residence}                                                                            & \textbf{Yes} \\
-                                                                           & Government \hfill * \Sexpr{round(model$coefficients["DisplayerGovernment"], 2)}               & No \hfill *\Sexpr{round(model$coefficients["EssentialNo"], 2)} \\
+                                                                           & Government \hfill * \Sexpr{round(model$coefficients["DisplayerGovernment"], 2)}               & No \hfill * \Sexpr{round(model$coefficients["EssentialNo"], 2)} \\
                                                                            & Non-Profit \hfill ** \Sexpr{round(model$coefficients["DisplayerNon-Profit"], 2)}              & \\
                                                                            & Religious Group \hfill ** \Sexpr{round(model$coefficients["DisplayerReligious Group"], 2)}    & \\
                                                                            & Local Business \hfill \Sexpr{round(model$coefficients["DisplayerLocal Business"], 2)}         & \\
                                                                            & Non-local Business \hfill \Sexpr{round(model$coefficients["DisplayerNon-local Business"], 2)} & \\
     \end{tabular}
-    Binomial logistic regression model
   \end{center}
 \end{frame}

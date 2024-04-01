@@ -1,15 +1,19 @@
 \begin{frame}{Model\Logo}
   \footnotesize
   \begin{center}
+    Binomial logistic regression model
+    
     \begin{tabular}{l l l}
+      \hline
       Language \hfill \~{} & Racial Area \hfill +  & Area \hfill +     \\
       \hline
       \textbf{Not French}  & \textbf{Black}        & \textbf{Regular}  \\
       French               & White                 & Cultural District \\
                            &                       & Historic District \\
                            &                       &                   \\
+      \cline{2-3}
                            & Displayer \hfill +    & Essential         \\
-      \hline
+      \cline{2-3}
                            & \textbf{Residence}    & \textbf{Yes} \\
                            & Government            & No \\
                            & Non-Profit            & \\
@@ -17,6 +21,5 @@
                            & Local Business        & \\
                            & Non-local Business    & \\
     \end{tabular}
-    Binomial logistic regression model
   \end{center}
 \end{frame}
