@@ -1,11 +1,17 @@
 \begin{frame}{Linguistic Landscapes\Logo}
   Qualitative approaches \smallcite{\parencite{hopkyns_linguistic_2022, lamarre_bilingual_2014, lee_multilingual_2019, pienimaki_making_2023, przymus_signs_2018, sakhiyya_reviving_2023, vajta_written_2023}}:
-  \begin{itemize}
-    \item Ethnography
-    \item Interviews
-    \item Discourse analysis
-    \item Semiotic analysis
-  \end{itemize}
+  \begin{columns}
+    \column{0.5\textwidth}
+      \begin{itemize}
+        \item Ethnography
+        \item Interviews
+      \end{itemize}
+    \column{0.5\textwidth}
+      \begin{itemize}
+        \item Discourse analysis
+        \item Semiotic analysis
+      \end{itemize}
+  \end{columns}
   Quantitative approaches:
   \begin{itemize}
     \item Factor analysis \smallcite{\parencite{landry_linguistic_1997}}
