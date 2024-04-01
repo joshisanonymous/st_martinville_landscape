@@ -1,0 +1,8 @@
+\begin{frame}{}
+  \begin{center}
+    {\LARGE
+    Merci! \\
+    Thank you!} \\
+    Code and data available at \url{https://osf.io/j9ds4/}.
+  \end{center}
+\end{frame}

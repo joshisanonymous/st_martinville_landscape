@@ -45,6 +45,8 @@
   \newcommand{\uttr}[1]{`#1'}
   % Sentences (pragmatics)
   \newcommand{\sent}[1]{\textit{#1}}
+  % Smaller citations
+  \newcommand{\smallcite}[1]{{\footnotesize{}#1}}
   % Research questions
   \newcommand{\RQone}{What factors lead to more or less use of French in the linguistic landscape?}
   \newcommand{\RQtwo}{Is French used as performance or as a practical matter?}
@@ -101,6 +103,8 @@
     <<child = "./present_frames/answer_factors.Rnw">>=
     @
     <<child = "./present_frames/answer_enregisterment.Rnw">>=
+    @
+    <<child = "./present_frames/ending.Rnw">>=
     @
   
   \section{References}
