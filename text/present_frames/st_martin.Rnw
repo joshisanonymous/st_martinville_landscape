@@ -34,9 +34,9 @@
             \item Population $\approx$ 5,379
             \item 34\% White, 60\% Black or African-American
             \item[] \smallcite{\parencite{noauthor_us_2020}}
-            \item<4> Includes a historic district and cultural district
+            \item Includes a historic district and cultural district
             \begin{itemize}
-              \item<4>[$\to$] Cultural district created in 2023 \smallcite{\parencite{noauthor_lt_2023}}
+              \item[$\to$] Cultural district created in 2023 \smallcite{\parencite{noauthor_lt_2023}}
             \end{itemize}
           \end{itemize}
         }
@@ -44,8 +44,8 @@
           \noindent{}Tourist attractions are French-related:
           \begin{itemize}
             \item Museum of the Acadian Memorial
-            \item<6-> Evangeline Oak
-            \item<7-> Longfellow Evangeline State Historic Site
+            \item Evangeline Oak
+            \item Longfellow Evangeline State Historic Site
           \end{itemize}
         }
       \end{minipage}
