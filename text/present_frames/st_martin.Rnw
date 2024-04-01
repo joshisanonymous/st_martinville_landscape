@@ -41,7 +41,7 @@
           \end{itemize}
         }
         \only<5->{
-          \noindent{}Tourist attractions are French-related:
+          \noindent{}Tourist attractions are attractive to francophone Canadians:
           \begin{itemize}
             \item Museum of the Acadian Memorial
             \item Evangeline Oak
