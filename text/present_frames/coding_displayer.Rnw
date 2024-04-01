@@ -1,0 +1,41 @@
+\begin{frame}{Coding: Displayer\Logo}
+  \footnotesize
+  Traditional categories \smallcite{\parencite{ben-rafael_linguistic_2006}}:
+  \begin{itemize}
+    \item Top-down: Signs exhibited by institutional agencies
+    \item Bottom-up: Signs exhibited by individuals or corporate actors
+  \end{itemize}
+  This has been challenged as an ``inadequate'' division \smallcite{\parencite{li_expanded_2021}}
+  \begin{columns}
+    \column{0.5\textwidth}
+      \begin{enumerate}
+        \item Residence
+        \item Government
+        \item Non-Profit
+        \item Religious Group
+        \item Local Business
+        \item Non-local Business
+      \end{enumerate}
+    \column{0.5\textwidth}
+      \begin{center}
+        \only<1>{
+          \includegraphics[scale=0.034]{PXL_20230611_223121674.jpg}
+        }
+        \only<2>{
+          \includegraphics[scale=0.034]{PXL_20230611_223403424.jpg}
+        }
+        \only<3>{
+          \includegraphics[scale=0.034]{PXL_20230610_164853126.jpg}
+        }
+        \only<4>{
+          \includegraphics[scale=0.034]{PXL_20230610_165921941.jpg}
+        }
+        \only<5>{
+          \includegraphics[scale=0.034]{PXL_20230610_175507379.jpg}
+        }
+        \only<6>{
+          \includegraphics[scale=0.034]{PXL_20230620_194841590.jpg}
+        }
+      \end{center}
+  \end{columns}
+\end{frame}

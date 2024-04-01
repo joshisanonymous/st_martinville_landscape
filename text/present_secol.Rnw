@@ -86,6 +86,10 @@
   \section{Methods}
     <<child = "./present_frames/data.Rnw">>=
     @
+    <<child = "./present_frames/coding_essential.Rnw">>=
+    @
+    <<child = "./present_frames/coding_displayer.Rnw">>=
+    @
     <<child = "./present_frames/model.Rnw">>=
     @
   
