@@ -4,23 +4,23 @@
     Binomial logistic regression model
 
     \begin{tabular}{l l l}
-      (Intercept)                                                          &                                                                                               & \\
+      (Intercept) \hfill \Sexpr{round(model_part$coefficients["(Intercept)"], 2)} &                                                                                                    & \\
       \hline
-      Language \hfill \~{}                                                 & Racial Area \hfill +                                                                          & Area \hfill + \\
+      Language \hfill \~{}                                                        & Racial Area \hfill +                                                                               & Area \hfill + \\
       \hline
-      \textbf{Not French}                                                  & \textbf{Black}                                                                                & \textbf{Regular} \\
-      French \hfill \Sexpr{round(model$coefficients["LanguageFrench"], 2)} & White \hfill \Sexpr{round(model$coefficients["Racial.AreaWhite"], 2)}                         & Cultural District \hfill *** \Sexpr{round(model$coefficients["AreaCultural District"], 2)} \\
-                                                                           &                                                                                               & Historic District \hfill ** \Sexpr{round(model$coefficients["AreaHistoric District"], 2)} \\
-                                                                           &                                                                                               & \\
+      \textbf{Not French}                                                         & \textbf{Black}                                                                                     & \textbf{Regular} \\
+      French                                                                      & White \hfill \Sexpr{round(model_part$coefficients["Racial.AreaWhite"], 2)}                         & Cultural District \hfill *** \Sexpr{round(model_part$coefficients["AreaCultural District"], 2)} \\
+                                                                                  &                                                                                                    & Historic District \hfill ** \Sexpr{round(model_part$coefficients["AreaHistoric District"], 2)} \\
+                                                                                  &                                                                                                    & \\
       \cline{2-3}
-                                                                           & Displayer \hfill +                                                                            & Essential \\
+                                                                                  & Displayer \hfill +                                                                                 & Essential \\
       \cline{2-3}
-                                                                           & \textbf{Residence}                                                                            & \textbf{Yes} \\
-                                                                           & Government \hfill * \Sexpr{round(model$coefficients["DisplayerGovernment"], 2)}               & No \hfill * \Sexpr{round(model$coefficients["EssentialNo"], 2)} \\
-                                                                           & Non-Profit \hfill ** \Sexpr{round(model$coefficients["DisplayerNon-Profit"], 2)}              & \\
-                                                                           & Religious Group \hfill ** \Sexpr{round(model$coefficients["DisplayerReligious Group"], 2)}    & \\
-                                                                           & Local Business \hfill \Sexpr{round(model$coefficients["DisplayerLocal Business"], 2)}         & \\
-                                                                           & Non-local Business \hfill \Sexpr{round(model$coefficients["DisplayerNon-local Business"], 2)} & \\
+                                                                                  & \textbf{Residence}                                                                                 & \textbf{Yes} \\
+                                                                                  & Government \hfill * \Sexpr{round(model_part$coefficients["DisplayerGovernment"], 2)}               & No \hfill ** \Sexpr{round(model_part$coefficients["EssentialNo"], 2)} \\
+                                                                                  & Non-Profit \hfill ** \Sexpr{round(model_part$coefficients["DisplayerNon-Profit"], 2)}              & \\
+                                                                                  & Religious Group \hfill ** \Sexpr{round(model_part$coefficients["DisplayerReligious Group"], 2)}    & \\
+                                                                                  & Local Business \hfill \Sexpr{sprintf("%.2f", round(model_part$coefficients["DisplayerLocal Business"], 2))}         & \\
+                                                                                  & Non-local Business \hfill \Sexpr{round(model_part$coefficients["DisplayerNon-local Business"], 2)} & \\
     \end{tabular}
   \end{center}
 \end{frame}

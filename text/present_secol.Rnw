@@ -90,8 +90,8 @@
     @
     <<child = "./present_frames/coding_displayer.Rnw">>=
     @
-    <<child = "./present_frames/model.Rnw">>=
-    @
+    % <<child = "./present_frames/model.Rnw">>=
+    % @
   
   \section{Results}
     <<child = "./present_frames/result_model.Rnw">>=
