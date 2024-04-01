@@ -49,7 +49,7 @@
   \newcommand{\smallcite}[1]{{\scriptsize{}#1}}
   % Research questions
   \newcommand{\RQone}{What factors lead to more or less use of French in the linguistic landscape?}
-  \newcommand{\RQtwo}{Is French used as performance or as a practical matter?}
+  \newcommand{\RQtwo}{Do these factors suggest that French is being used communicatively or symbolically?}
   
 \begin{document}
   <<setup, echo = FALSE, message = FALSE>>=
