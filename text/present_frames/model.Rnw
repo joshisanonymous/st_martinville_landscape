@@ -1,4 +1,4 @@
-\begin{frame}{Coding and Model\Logo}
+\begin{frame}{Model\Logo}
   \footnotesize
   \begin{center}
     \begin{tabular}{l l l}
@@ -8,18 +8,15 @@
       French               & White                 & Cultural District \\
                            &                       & Historic District \\
                            &                       &                   \\
-      Essential \hfill +   & Displayer \hfill +    & Type              \\
+                           & Displayer \hfill +    & Essential         \\
       \hline
-      \textbf{Yes}         & \textbf{Residence}    & \textbf{Metal}    \\
-      No                   & Government            & Imprint           \\
-                           & Non-Profit            & Plaque            \\
-                           & Religious Group       & Board             \\
-                           & Local Business        & Tag               \\
-                           & Non-local Business    & Poster            \\
-                           &                       & Document          \\
-                           &                       & Graffiti          \\
-                           &                       & Item              \\
+                           & \textbf{Residence}    & \textbf{Yes} \\
+                           & Government            & No \\
+                           & Non-Profit            & \\
+                           & Religious Group       & \\
+                           & Local Business        & \\
+                           & Non-local Business    & \\
     \end{tabular}
+    Binomial logistic regression model
   \end{center}
-  Also coded for \emph{Use} which is perfectly correlated with \emph{Essential}
 \end{frame}
