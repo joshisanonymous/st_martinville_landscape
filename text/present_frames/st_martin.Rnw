@@ -30,13 +30,13 @@
       \begin{minipage}[c][0.8\textheight]{\linewidth}
         \only<-4>{
           \begin{itemize}
-            \item 81\% English, 19\% French/Creole \parencite{noauthor_st_2000}
+            \item 81\% English, 19\% French/Creole \smallcite{\parencite{noauthor_st_2000}}
             \item Population $\approx$ 5,379
             \item 34\% White, 60\% Black or African-American
-            \item[] \parencite{noauthor_us_2020}
+            \item[] \smallcite{\parencite{noauthor_us_2020}}
             \item<4> Includes a historic district and cultural district
             \begin{itemize}
-              \item<4>[$\to$] Cultural district created in 2023 \parencite{noauthor_lt_2023}
+              \item<4>[$\to$] Cultural district created in 2023 \smallcite{\parencite{noauthor_lt_2023}}
             \end{itemize}
           \end{itemize}
         }

@@ -6,16 +6,16 @@
         <<fig.asp = 1>>=
         mapacadiana
         @
-        As per HCR 496 \parencite[1971, as cited in][]{trepanier_french_1988}
+        {\footnotesize As per HCR 496 \smallcite{\parencite[1971, as cited in][]{trepanier_french_1988}}}
       \end{center}
     \column{0.5\textwidth}
       % \begin{minipage}[c][0.7\textheight]{\linewidth}
         % \only<1>{
           \begin{itemize}
-            \item Spoken primarily in South Louisiana, i.e. Acadiana \parencite{trepanier_french_1988}
-            \item French and Creole have long been described as in decline \parencite{johnson_louisiana_1976, klingler_probleme_2005, neumann_creole_1985, rottet_language_1995, trepanier_french_1988}
-            \item Speakers remaining $\approx$ 84,000 \parencite[p.~128]{marcoux_estimation_2022}
-            \item Literacy is low (\citeauthor{blainey_first_2013}, \citeyear[p.~71]{blainey_first_2013}; \citeauthor{rottet_language_1995}, \citeyear[p.~146]{rottet_language_1995})
+            \item Spoken primarily in South Louisiana, i.e. Acadiana \smallcite{\parencite{trepanier_french_1988}}
+            \item French and Creole have long been described as in decline \smallcite{\parencite{johnson_louisiana_1976, klingler_probleme_2005, neumann_creole_1985, rottet_language_1995, trepanier_french_1988}}
+            \item Speakers remaining $\approx$ 84,000 \smallcite{\parencite{marcoux_estimation_2022}}
+            \item Literacy is low \smallcite{(\citeauthor{blainey_first_2013}, \citeyear[p.~71]{blainey_first_2013}; \citeauthor{rottet_language_1995}, \citeyear[p.~146]{rottet_language_1995})}
           \end{itemize}
         % }
         % \only<3>{
