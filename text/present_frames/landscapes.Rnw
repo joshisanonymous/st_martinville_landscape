@@ -1,4 +1,4 @@
-\begin{frame}{Linguistic Landscapes}
+\begin{frame}{Linguistic Landscapes\Logo}
   \small
   Definition: ``[T]he visibility and salience of languages on public and commercial signs in a given territory or region'' \smallcite{\parencite{landry_linguistic_1997}}
   \begin{itemize}
