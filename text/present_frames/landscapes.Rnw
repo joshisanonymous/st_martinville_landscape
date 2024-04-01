@@ -1,0 +1,21 @@
+\begin{frame}{Linguistic Landscapes}
+  \small
+  Definition: ``[T]he visibility and salience of languages on public and commercial signs in a given territory or region'' \smallcite{\parencite{landry_linguistic_1997}}
+  \begin{itemize}
+    \item Developing field \smallcite{\parencite[e.g.,][]{spolsky_languages_1991}}
+    \item Focused on bi-/multi-lingualism:
+  \end{itemize}
+  \begin{center}
+    \footnotesize
+    \begin{tabular}{l l}
+      Arabic-English \smallcite{\parencite{hopkyns_linguistic_2022}} & Finnish-Others \smallcite{\parencite{pienimaki_making_2023}} \\
+      Spanish-English \smallcite{\parencite{przymus_signs_2018}} & Korean-English \smallcite{\parencite{lee_multilingual_2019}} \\
+      \multicolumn{2}{l}{French-Others \smallcite{\parencite{amos_regional_2017, lamarre_bilingual_2014, landry_linguistic_1997, vajta_written_2023}}} \\
+      \multicolumn{2}{l}{Hebrew-Others \smallcite{\parencite{ben-rafael_linguistic_2006, spolsky_languages_1991}}} \\
+      \multicolumn{2}{l}{Indonesian-Others \smallcite{\parencite{sakhiyya_reviving_2023}}} \\
+    \end{tabular}
+  \end{center}
+  \begin{itemize}
+    \item Two language uses: Communicative and symbolic \smallcite{\parencite{ben-rafael_linguistic_2006, landry_linguistic_1997, spolsky_languages_1991}}
+  \end{itemize}
+\end{frame}

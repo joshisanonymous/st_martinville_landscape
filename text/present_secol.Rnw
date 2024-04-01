@@ -70,6 +70,10 @@
     @
 
   \section{Background}
+    <<child = "./present_frames/landscapes.Rnw">>=
+    @
+    <<child = "./present_frames/landscapes_methods.Rnw">>=
+    @
     <<child = "./present_frames/la_french.Rnw">>=
     @
     <<child = "./present_frames/st_martin.Rnw">>=
@@ -82,7 +86,7 @@
   \section{Methods}
     <<child = "./present_frames/data.Rnw">>=
     @
-    <<child = "./present_frames/coding.Rnw">>=
+    <<child = "./present_frames/model.Rnw">>=
     @
   
   \section{Results}

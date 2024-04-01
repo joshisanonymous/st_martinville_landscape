@@ -1,0 +1,15 @@
+\begin{frame}{Linguistic Landscapes}
+  Qualitative approaches \smallcite{\parencite{hopkyns_linguistic_2022, lamarre_bilingual_2014, lee_multilingual_2019, pienimaki_making_2023, przymus_signs_2018, sakhiyya_reviving_2023, vajta_written_2023}}:
+  \begin{itemize}
+    \item Ethnography
+    \item Interviews
+    \item Discourse analysis
+    \item Semiotic analysis
+  \end{itemize}
+  Quantitative approaches:
+  \begin{itemize}
+    \item Factor analysis \smallcite{\parencite{landry_linguistic_1997}}
+    \item Tabulations \smallcite{\parencite{amos_regional_2017, ben-rafael_linguistic_2006}}
+  \end{itemize}
+  \textcite{malinowski_quantitative_2020} in particular have been working towards a quantitative variationist approach.
+\end{frame}
