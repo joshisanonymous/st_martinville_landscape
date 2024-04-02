@@ -4,7 +4,7 @@
     Binomial logistic regression model
 
     \begin{tabular}{l l l}
-      (Intercept) \hfill \Sexpr{round(model_part$coefficients["(Intercept)"], 2)} &                                                                                                    & \\
+      (Intercept) \hfill \Sexpr{round(model_part$coefficients["(Intercept)"], 2)} & $N = \Sexpr{nrow(signs)}$                                                                          & \\
       \hline
       Language \hfill \~{}                                                        & Racial Area \hfill +                                                                               & Area \hfill + \\
       \hline
