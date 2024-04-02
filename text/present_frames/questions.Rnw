@@ -1,5 +1,5 @@
 \begin{frame}{Research Questions\Logo}
-  Given the social situation:
+  Given the sociolinguistic situation:
   \begin{enumerate}
     \item \RQone
     \item \RQtwo
