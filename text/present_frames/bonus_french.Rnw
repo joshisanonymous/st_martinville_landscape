@@ -1,0 +1,5 @@
+\begin{frame}{French vs French-English\Logo}
+  <<fig.asp = 0.6>>=
+  graph_french
+  @
+\end{frame}

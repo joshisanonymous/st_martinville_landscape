@@ -118,8 +118,12 @@
     \printbibliography
   
   \section{Bonus Slides}
+    <<child = "./present_frames/bonus_use.Rnw">>=
+    @
     <<child = "./present_frames/bonus_race.Rnw">>=
     @
     <<child = "./present_frames/bonus_type.Rnw">>=
+    @
+    <<child = "./present_frames/bonus_french.Rnw">>=
     @
 \end{document}

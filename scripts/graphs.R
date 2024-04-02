@@ -10,10 +10,9 @@ graph_area_ylim <- 300
 ylabel <- "Count"
 
 # Subset ----------------------------------------------------------------------
-signs_import_langs_separate <- droplevels(signs[signs$Language == "French" |
-                                          signs$Language == "French-English" |
-                                          signs$Language == "English", ])
-signs_import_langs <- signs_import_langs_separate
+signs_import_langs <- droplevels(signs[signs$Language == "French" |
+                                       signs$Language == "French-English" |
+                                       signs$Language == "English", ])
 levels(signs_import_langs$Language) <- list(
   "English" = c("English"),
   "French" = c("French", "French-English")
@@ -21,6 +20,8 @@ levels(signs_import_langs$Language) <- list(
 signs_import_langs$Language <- factor(
   signs_import_langs$Language, levels = c("French", "English")
 )
+signs_french <- droplevels(signs[signs$Language == "French" |
+                                 signs$Language == "French-English", ])
 
 # Graphs ----------------------------------------------------------------------
 graph_essential <- signs_import_langs %>%
@@ -158,3 +159,7 @@ graph_area_rf <- signs_import_langs %>%
   theme(axis.text.x = element_text(angle = 45, vjust = 1, hjust = 1)) +
   ylab("Relative Frequency (by Area)")
   
+graph_french <- signs_french %>%
+  ggplot(aes(x = Language)) +
+  geom_bar() +
+  ylab(ylabel)
