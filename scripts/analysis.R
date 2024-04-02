@@ -47,9 +47,12 @@ levels(signs_binomial$Language) <- list(
 
 # Binomial logistic regression, "Not French" as the reference level
 # Use and Essential are perfectly linear, so only one is used
-model <- glm(Language ~ Racial.Area + Area + Displayer + Type + Essential,
+model_full <- glm(Language ~ Racial.Area + Area + Displayer + Type + Essential,
              data = signs_binomial,
              family = binomial)
+model_part <- glm(Language ~ Racial.Area + Area + Displayer + Essential,
+                  data = signs_binomial,
+                  family = binomial)
 
 # Maps -----------------------------------------------------------------------
 source("maps.R")

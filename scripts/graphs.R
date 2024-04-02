@@ -2,6 +2,7 @@
 essential <- c("bold.italic", "bold.italic", "bold.italic", "bold.italic",
                "plain", "plain", "plain", "bold.italic", "plain")
 graph_use_ylim <-  75
+graph_essential_ylim <-  75
 graph_disp_ylim <- 100
 graph_type_ylim <- 125
 graph_race_ylim <- 300
@@ -9,14 +10,41 @@ graph_area_ylim <- 300
 ylabel <- "Count"
 
 # Subset ----------------------------------------------------------------------
-signs_import_langs <- droplevels(signs[signs$Language == "French" |
-                                         signs$Language == "French-English" |
-                                         signs$Language == "English", ])
+signs_import_langs_separate <- droplevels(signs[signs$Language == "French" |
+                                          signs$Language == "French-English" |
+                                          signs$Language == "English", ])
+signs_import_langs <- signs_import_langs_separate
+levels(signs_import_langs$Language) <- list(
+  "English" = c("English"),
+  "French" = c("French", "French-English")
+)
 signs_import_langs$Language <- factor(
-  signs_import_langs$Language, levels = c("French", "French-English", "English")
+  signs_import_langs$Language, levels = c("French", "English")
 )
 
 # Graphs ----------------------------------------------------------------------
+graph_essential <- signs_import_langs %>%
+  mutate(Language, Essential) %>%
+  count(Language, Essential, .drop = FALSE) %>%
+  ggplot(aes(x = Essential, y = n)) +
+  geom_col(aes(fill = Language),
+           position = position_dodge(preserve = "single")) +
+  coord_cartesian(ylim = c(0, graph_essential_ylim)) +
+  geom_text(aes(label = ifelse(Language == "English" & n > graph_essential_ylim, n, NA),
+                y = graph_essential_ylim,
+                group = Language),
+            position = position_dodge(width = 1)) +
+  ylab(ylabel) +
+  xlab("Essential (essential in italics)")
+
+graph_essential_rf <- signs_import_langs %>%
+  count(Language, Essential, .drop = FALSE) %>%
+  mutate(rf = n/sum(n), .by = Essential) %>%
+  ggplot(aes(x = Essential, y = rf)) +
+  geom_col(aes(fill = Language),
+           position = position_dodge(preserve = "single")) +
+  ylab("Relative Frequency (by Essential)")
+
 graph_use <- signs_import_langs %>%
   mutate(Language, Use) %>%
   count(Language, Use, .drop = FALSE) %>%
@@ -126,4 +154,7 @@ graph_area_rf <- signs_import_langs %>%
   ggplot(aes(x = Area, y = rf)) +
   geom_col(aes(fill = Language),
            position = position_dodge(preserve = "single")) +
+  theme(text = element_text(size = 20)) +
+  theme(axis.text.x = element_text(angle = 45, vjust = 1, hjust = 1)) +
   ylab("Relative Frequency (by Area)")
+  

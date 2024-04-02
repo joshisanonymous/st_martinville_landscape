@@ -4,7 +4,7 @@ library(sf)
 
 # Map variables----------------------------------------------------------------
 sign_size <- 3
-sign_colors <- c("#619CFF", "#00BA38", "#F8766D")
+sign_colors <- c("#619CFF", "#F8766D")
 
 # Louisiana
 louisiana <- opq(getbb("Louisiana"), timeout = 60 * 20) |>
@@ -62,8 +62,8 @@ cultural_dist <- cultural_dist_all[
 
 # Subsets
 signs_english <- signs[signs$Language == "English", ]
-signs_french <- signs[signs$Language == "French", ]
-signs_bilingual <- signs[signs$Language == "French-English", ]
+signs_french <- signs[signs$Language == "French" |
+                      signs$Language == "French-English", ]
 
 # Maps ------------------------------------------------------------------------
 mapsm <- ggplot() +
@@ -115,18 +115,10 @@ mapsm_norm_signs <- mapsm_norm_dists +
              shape = 21,
              inherit.aes = FALSE,
              size = sign_size) +
-  geom_point(data = signs_bilingual,
-             mapping = aes(x = GPSLongitude,
-                           y = GPSLatitude),
-             fill = sign_colors[2],
-             color = "black",
-             shape = 21,
-             inherit.aes = FALSE,
-             size = sign_size) +
   geom_point(data = signs_french,
              mapping = aes(x = GPSLongitude,
                            y = GPSLatitude),
-             fill = sign_colors[3],
+             fill = sign_colors[2],
              color = "black",
              shape = 21,
              inherit.aes = FALSE,
@@ -152,18 +144,10 @@ mapsm_dists_signs <- mapsm_dists +
              shape = 21,
              inherit.aes = FALSE,
              size = sign_size) +
-  geom_point(data = signs_bilingual,
-             mapping = aes(x = GPSLongitude,
-                           y = GPSLatitude),
-             fill = sign_colors[2],
-             color = "black",
-             shape = 21,
-             inherit.aes = FALSE,
-             size = sign_size) +
   geom_point(data = signs_french,
              mapping = aes(x = GPSLongitude,
                            y = GPSLatitude),
-             fill = sign_colors[3],
+             fill = sign_colors[2],
              color = "black",
              shape = 21,
              inherit.aes = FALSE,
@@ -176,9 +160,9 @@ mapla <- ggplot() +
 
 mapacadiana <- mapla +
   geom_sf(data = acadiana,
-          fill = "#F8766D") +
+          fill = sign_colors[2]) +
   geom_sf(data = major_cities,
-          fill = "#00BA38") +
+          fill = sign_colors[1]) +
   geom_text(data = major_cities,
     aes(label = name),
     y = major_cities_coords$y + 0.05, x = major_cities_coords$x + 0.175,
