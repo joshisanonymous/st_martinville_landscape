@@ -17,8 +17,7 @@
   \usepackage[backend=biber, style=apa]{biblatex}
     \addbibresource{references.bib}
   \usepackage{hyperref}
-    \hypersetup{colorlinks=true,
-                allcolors=blue}
+    \hypersetup{colorlinks=false}
   \usepackage{graphicx}
     \graphicspath{{../data/photos/}{./present_figures/}}
 
@@ -108,9 +107,9 @@
     @
   
   \section{Conclusions}
-    <<child = "./present_frames/answer_factors.Rnw">>=
+    <<child = "./present_frames/answers.Rnw">>=
     @
-    <<child = "./present_frames/answer_enregisterment.Rnw">>=
+    <<child = "./present_frames/discussion.Rnw">>=
     @
     <<child = "./present_frames/ending.Rnw">>=
     @

@@ -1,9 +1,0 @@
-\begin{frame}{Enregisterment\Logo}
-  Question 2: \RQtwo
-  \begin{itemize}
-    \item The restriction of French signs to non-essential uses in cultural, French tourist-focused areas suggests performance
-    \begin{itemize}
-      \item[$\to$] This resembles the latter stages of enregisterment
-    \end{itemize}
-  \end{itemize}
-\end{frame}

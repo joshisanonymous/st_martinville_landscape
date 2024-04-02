@@ -1,0 +1,11 @@
+\begin{frame}{Research Questions\Logo}
+  \small
+  Question 1: \RQone
+  \begin{itemize}
+    \item Location (cultural or historic district), essentialness (non-essential), and displayer (govt, non-profit, religious group) matter.
+  \end{itemize}
+  Question 2: \RQtwo
+  \begin{itemize}
+    \item French is used symbolically.
+  \end{itemize}
+\end{frame}

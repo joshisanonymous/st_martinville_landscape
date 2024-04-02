@@ -1,0 +1,12 @@
+\begin{frame}{Discussion\Logo}
+  French signage is driven by local community organisations rather than private individuals
+  \begin{itemize}
+    \item There is significant room for increased use of French in the landscape
+    \item Private individuals either are not motivated or do not have the competency needed
+  \end{itemize} 
+  Symbolic use of French in the linguistic landscape resembles the later stages of enregisterment \smallcite{\parencite{agha_social_2003, johnstone_mobility_2006}}
+  \begin{itemize}
+    \item Enregisterment: ``[P]rocesses through which a linguistic repertoire becomes differentiable within a language as a socially recognized register of forms'' \smallcite{\parencite{agha_social_2003}}
+    \item Later stages involve a language variety no longer being used for day-to-day interactions but rather stereotyped and explicitly acted out when used at all
+  \end{itemize}
+\end{frame}

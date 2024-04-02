@@ -12,6 +12,7 @@
         \item Semiotic analysis
       \end{itemize}
   \end{columns}
+  \vspace{0.2cm}
   Quantitative approaches:
   \begin{itemize}
     \item Factor analysis \smallcite{\parencite{landry_linguistic_1997}}
