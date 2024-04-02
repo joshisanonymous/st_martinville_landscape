@@ -2,20 +2,36 @@
   \begin{columns}
     \column{0.5\textwidth}
       \begin{center}
-        <<fig.asp = 1.25>>=
-        mapsm_norm_signs
-        @
+        \only<1>{
+          <<fig.asp = 1.25>>=
+          mapsm_norm_signs_eng
+          @
+        }
+        \only<2>{
+          <<fig.asp = 1.25>>=
+          mapsm_norm_signs
+          @
+        }
       \end{center}
     \column{0.5\textwidth}
-      Collected: June 10th to June 20th, 2023
-      \begin{itemize}
-        \item Total signs: \Sexpr{nrow(signs)}
-        \item ``Signs'' in this case means all public-facing language
-      \end{itemize}
-      Additional factors:
-      \begin{itemize}
-        \item Essential
-        \item Displayer
-      \end{itemize}
+      \only<1>{
+        \begin{center}
+          <<fig.asp = 1.25>>=
+          mapsm_norm_signs_fre
+          @
+        \end{center}
+      }
+      \only<2>{
+        Collected: June 10th to June 20th, 2023
+        \begin{itemize}
+          \item Total signs: \Sexpr{nrow(signs)}
+          \item ``Signs'' in this case means all public-facing language
+        \end{itemize}
+        Additional factors:
+        \begin{itemize}
+          \item Essential
+          \item Displayer
+        \end{itemize}
+      }
   \end{columns}
 \end{frame}

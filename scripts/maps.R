@@ -124,6 +124,26 @@ mapsm_norm_signs <- mapsm_norm_dists +
              inherit.aes = FALSE,
              size = sign_size)
 
+mapsm_norm_signs_eng <- mapsm_norm_dists +
+  geom_point(data = signs_english,
+             mapping = aes(x = GPSLongitude,
+                           y = GPSLatitude),
+             fill = sign_colors[1],
+             color = "black",
+             shape = 21,
+             inherit.aes = FALSE,
+             size = sign_size)
+
+mapsm_norm_signs_fre <- mapsm_norm_dists +
+  geom_point(data = signs_french,
+             mapping = aes(x = GPSLongitude,
+                           y = GPSLatitude),
+             fill = sign_colors[2],
+             color = "black",
+             shape = 21,
+             inherit.aes = FALSE,
+             size = sign_size)
+
 mapsm_dists <- mapsm +
   coord_sf(ylim = c(30.117, 30.129),
            xlim = c(-91.836, -91.821),
