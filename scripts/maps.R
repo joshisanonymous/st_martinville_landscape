@@ -66,6 +66,20 @@ signs_french <- signs[signs$Language == "French" |
                       signs$Language == "French-English", ]
 
 # Maps ------------------------------------------------------------------------
+legend_norm_french <- geom_textbox(aes(label = "French"),
+                                   y = 30.135, x = -91.842,
+                                   size = 6, fontface = "bold",
+                                   color = "white",
+                                   fill = sign_colors[2],
+                                   width = unit(1, "inch"))
+
+legend_norm_english <- geom_textbox(aes(label = "English"),
+                                   y = 30.135, x = -91.834,
+                                   size = 6, fontface = "bold",
+                                   color = "white",
+                                   fill = sign_colors[1],
+                                   width = unit(1, "inch"))
+
 mapsm <- ggplot() +
   geom_sf(data = city$osm_multipolygons,
           fill = "lightyellow2",
@@ -122,7 +136,8 @@ mapsm_norm_signs <- mapsm_norm_dists +
              color = "black",
              shape = 21,
              inherit.aes = FALSE,
-             size = sign_size)
+             size = sign_size) +
+  legend_norm_english + legend_norm_french
 
 mapsm_norm_signs_eng <- mapsm_norm_dists +
   geom_point(data = signs_english,
@@ -132,7 +147,8 @@ mapsm_norm_signs_eng <- mapsm_norm_dists +
              color = "black",
              shape = 21,
              inherit.aes = FALSE,
-             size = sign_size)
+             size = sign_size) +
+  legend_norm_english
 
 mapsm_norm_signs_fre <- mapsm_norm_dists +
   geom_point(data = signs_french,
@@ -142,7 +158,8 @@ mapsm_norm_signs_fre <- mapsm_norm_dists +
              color = "black",
              shape = 21,
              inherit.aes = FALSE,
-             size = sign_size)
+             size = sign_size) +
+  legend_norm_french
 
 mapsm_dists <- mapsm +
   coord_sf(ylim = c(30.117, 30.129),
