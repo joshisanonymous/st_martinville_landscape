@@ -4,7 +4,7 @@
     Binomial logistic regression model
 
     \begin{tabular}{l l l}
-      (Intercept) \hfill \Sexpr{round(model_part$coefficients["(Intercept)"], 2)} & $N = \Sexpr{nrow(signs)}$                                                                          & \\
+                                                                                  &                                                                                                    & \\
       \hline
       Language \hfill \~{}                                                        & Racial Area \hfill +                                                                               & Area \hfill + \\
       \hline
@@ -13,9 +13,9 @@
                                                                                   &                                                                                                    & Historic District \hfill ** \Sexpr{round(model_part$coefficients["AreaHistoric District"], 2)} \\
                                                                                   &                                                                                                    & \\
       \cline{2-3}
-                                                                                  & Displayer \hfill +                                                                                 & Essential \\
+      (Intercept) \hfill \Sexpr{round(model_part$coefficients["(Intercept)"], 2)} & Displayer \hfill +                                                                                 & Essential \\
       \cline{2-3}
-                                                                                  & \textbf{Residence}                                                                                 & \textbf{Yes} \\
+      $N = \Sexpr{nrow(signs)}$                                                   & \textbf{Residence}                                                                                 & \textbf{Yes} \\
                                                                                   & Government \hfill * \Sexpr{round(model_part$coefficients["DisplayerGovernment"], 2)}               & No \hfill ** \Sexpr{round(model_part$coefficients["EssentialNo"], 2)} \\
                                                                                   & Non-Profit \hfill ** \Sexpr{round(model_part$coefficients["DisplayerNon-Profit"], 2)}              & \\
                                                                                   & Religious Group \hfill ** \Sexpr{round(model_part$coefficients["DisplayerReligious Group"], 2)}    & \\
