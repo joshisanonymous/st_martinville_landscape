@@ -18,24 +18,7 @@
       \end{enumerate}
     \column{0.5\textwidth}
       \begin{center}
-        \only<1>{
-          \includegraphics[scale=0.034]{PXL_20230611_223121674.jpg}
-        }
-        \only<2>{
-          \includegraphics[scale=0.034]{PXL_20230611_223403424.jpg}
-        }
-        \only<3>{
-          \includegraphics[scale=0.034]{PXL_20230610_164853126.jpg}
-        }
-        \only<4>{
-          \includegraphics[scale=0.034]{PXL_20230610_165921941.jpg}
-        }
-        \only<5>{
-          \includegraphics[scale=0.034]{PXL_20230610_175507379.jpg}
-        }
-        \only<6>{
-          \includegraphics[scale=0.034]{PXL_20230620_194841590.jpg}
-        }
+        \includegraphics[scale=0.034]{PXL_20230611_223403424.jpg}
       \end{center}
   \end{columns}
 \end{frame}
