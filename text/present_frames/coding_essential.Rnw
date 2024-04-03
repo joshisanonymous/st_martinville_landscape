@@ -12,10 +12,7 @@
         \only<1>{
           \includegraphics[scale=0.035]{PXL_20230611_212504907.jpg}
         }
-        \only<2>{
-          \includegraphics[scale=0.035]{PXL_20230611_213803071.jpg}
-        }
-        \only<3->{
+        \only<2->{
           \includegraphics[scale=0.035]{PXL_20230611_212913260.jpg}
         }
       \end{center}
@@ -25,10 +22,10 @@
         \item culture, decoration, marketing, transgression
       \end{itemize}
       \begin{center}
-        \only<-3>{
+        \only<-2>{
           \includegraphics[scale=0.035]{PXL_20230610_171414611.jpg}
         }
-        \only<4>{
+        \only<3>{
           \includegraphics[scale=0.035]{PXL_20230611_214847537.jpg}
         }
       \end{center}
