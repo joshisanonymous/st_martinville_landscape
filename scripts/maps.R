@@ -4,7 +4,7 @@ library(sf)
 
 # Map variables----------------------------------------------------------------
 sign_size <- 3
-sign_colors <- c("#619CFF", "#F8766D")
+sign_colors <- c("#00BFC4", "#F8766D")
 
 # Louisiana
 louisiana <- opq(getbb("Louisiana"), timeout = 60 * 20) |>
