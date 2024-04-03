@@ -97,11 +97,7 @@
     @
     <<child = "./present_frames/result_area.Rnw">>=
     @
-    <<child = "./present_frames/result_model.Rnw">>=
-    @
     <<child = "./present_frames/result_displayer.Rnw">>=
-    @
-    <<child = "./present_frames/result_model.Rnw">>=
     @
     <<child = "./present_frames/result_essential.Rnw">>=
     @
