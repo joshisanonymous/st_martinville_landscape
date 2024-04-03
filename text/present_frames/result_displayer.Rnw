@@ -17,9 +17,6 @@
       \includegraphics[scale=0.05]{../data/photos/PXL_20230610_170752356.jpg}
     }
     \only<5>{
-      \includegraphics[scale=0.05]{../data/photos/PXL_20230306_194644861.jpg}
-    }
-    \only<6>{
       \includegraphics[scale=0.05]{../data/photos/PXL_20230610_170145693.jpg}
       \includegraphics[scale=0.05]{../data/photos/PXL_20230610_170426086.jpg}
     }
